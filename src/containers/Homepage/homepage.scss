@@ -1,0 +1,99 @@
+@import "../../styles/color";
+
+
+.link{
+  display: inline-block;
+}
+
+.disabled{
+  pointer-events: none;
+  button{
+    background-color: #ffe0b6 !important;
+  }
+}
+
+
+.pad_top{
+  padding-top: 50px;
+}
+
+.welcome_screen{
+  margin-bottom: 40px;
+
+
+  h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .welcome_form{
+
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 40px;
+
+    input{
+
+      width: 80%;
+      margin-bottom: 25px;
+      border-right: none;
+      border-left: none;
+      border-top: none;
+      border-bottom: 1.2px solid $primary;
+      border-radius: 0;
+      color: $primary;
+    }
+
+    h3{
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    button, button:hover, button:focus{
+      background-color: $accent;
+      color: white;
+      border: none;
+      width: 250px;
+      margin-top: 20px;
+      border-radius: 2px;
+      height: 44px;
+      line-height: 44px;
+    }
+
+    p{
+      font-size: 13px;
+      font-weight: 400;
+      color: $primary;
+    }
+
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .welcome_screen{
+    margin-bottom: 40px;
+    h1{
+      font-size: 24px;
+    }
+
+    .welcome_form{
+      border-radius: 0px;
+      margin: 0 10px;
+    }
+
+
+  }
+
+}
+
+
+
+

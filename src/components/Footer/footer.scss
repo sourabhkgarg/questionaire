@@ -1,0 +1,86 @@
+@import '../../styles/color';
+
+.footer-div {
+
+  margin-top: 300px;
+
+}
+.footer{
+  padding: 80px 0;
+  border-top: 1px dashed #4c4f5e;
+
+}
+
+
+.footer_ul{
+  list-style: none;
+  li{
+    list-style: none;
+    margin-bottom: 25px;
+
+    a{
+      color: $grey;
+    }
+  }
+
+  li:first-child{
+    margin-bottom: 30px !important;
+    a{
+      text-transform: uppercase;
+      color: white !important;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+}
+
+.width_25{
+  width: 25%;
+}
+
+
+
+.social_div{
+
+  p{
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .social_icons{
+    margin-top: 30px;
+
+    div{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+      box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 20px 0px;
+
+      svg{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .footer{
+    display: none;
+  }
+
+}
+
+
