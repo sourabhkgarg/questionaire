@@ -17,7 +17,7 @@ class Main extends React.Component {
   }
 
   render() {
-
+    const {questions} = this.props;
 
     return (
       <div className="container">
@@ -25,7 +25,7 @@ class Main extends React.Component {
         <Navbar/>
 
         <div className="min_height">
-          {this.props.children}
+          {questions && questions.length > 0 && this.props.children}
 
         </div>
 
@@ -36,6 +36,10 @@ class Main extends React.Component {
 }
 
 
+function mapStateToProps(state) {
+    return {
+        questions :  state.Questions
+    };
+}
 
-
-export default connect()(Main);
+export default connect(mapStateToProps)(Main);
